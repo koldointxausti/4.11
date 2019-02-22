@@ -1,9 +1,11 @@
-public class Team {
+import java.util.ArrayList;
+public abstract class Team {
 	
 	private String name;
 	private String nationality;
 	private String stadium;
 	private int capacity;
+	protected ArrayList<Player> players = new ArrayList<Player>();
 	
 	public String getName() {
 		return this.name;
@@ -11,7 +13,6 @@ public class Team {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	public String getNationality() {
 		return this.nationality;
 	}
@@ -32,4 +33,11 @@ public class Team {
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
+	
+	public void addPlayer(Player player) {
+		if(checkPlayer(player)) {
+			players.add(player);
+		}
+	}
+	public abstract boolean checkPlayer(Player player);
 }

@@ -1,24 +1,24 @@
 public class FootballMatch {
 
-	private Team localTeam;
-	private Team visitorTeam;
+	private FootballTeam localTeam;
+	private FootballTeam visitorTeam;
 	private int goalsLocal;
 	private int goalsVisitor;
 
-	public Team getLocalTeam() {
+	public FootballTeam getLocalTeam() {
 		return this.localTeam;
     }
 
-	public void setLocalTeam(Team localTeam) {
+	public void setLocalTeam(FootballTeam localTeam) {
 		this.localTeam = localTeam;
 	}
 
-	public Team getVisitorTeam() {
+	public FootballTeam getVisitorTeam() {
 		return this.visitorTeam;
 	}
 
-	public void setVisitorTeam(Team visitorTeam) {
-		this.visitorTeam = visitorTeam;
+	public void setVisitorTeam(FootballTeam footballTeam) {
+		this.visitorTeam = footballTeam;
 	}
 
 	public int getGoalsLocal() {

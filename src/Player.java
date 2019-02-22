@@ -4,6 +4,7 @@ public class Player {
 	private int age;
 	private String position;
 	private Team team;
+	private String sport = "";
 	
 	public String getName() {
 		return this.name;
@@ -31,6 +32,12 @@ public class Player {
 	}
 	public void setTeam(Team team) {
 		this.team = team;
+	}
+	public String getSport() {
+		return sport;
+	}
+	public void setSport(String sport) {
+		this.sport = sport;
 	}
 	
 }
